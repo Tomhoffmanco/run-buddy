@@ -1,4 +1,18 @@
+<<<<<<< HEAD
+
+# Run Buddy, inc...
+
+=======
+<<<<<<< HEAD
+
+# Run Buddy, Inc.
+
+=======
+
 # Run Buddy inc...
+
+> > > > > > > c634ede080559d28180472bd20127306fa888f33
+> > > > > > > main
 
 ## Purpose
 
