@@ -1,21 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #ebeff0;
 }
 
 header {
-  display: flex;
   padding: 20px 35px;
   background-color: #39a6b2;
-  justify-content:space-between;
-  flex-wrap: wrap
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
 
 header a {
@@ -27,7 +33,7 @@ header nav {
   margin: 7px 0;
 }
 
-header nav ul  {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,16 +47,37 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+footer {
+  background: #fce138;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+footer h2 {
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
 
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+}
 
 section {
   padding: 60px;
+}
+
+.flex-row {
+  display: flex;
 }
 
 .hero {
@@ -58,10 +85,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   background-image: url("../images/hero-bg.jpg");
-  height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .hero-cta {
@@ -87,9 +112,6 @@ section {
   border-style: solid;
   border-width: 3px;
   border-color: #024e76;
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
   width: 40%;
   margin: 3.5%;
 }
@@ -125,11 +147,8 @@ section {
   font-size: 16px;
 }
 
-.intro {
-  text-align: center;
-}
-
 .intro p {
+  text-align: center;
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
@@ -138,17 +157,28 @@ section {
 }
 
 .steps {
-  text-align: center;
   background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section-title {
   font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
   border-bottom: 3px solid;
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
@@ -159,28 +189,42 @@ section {
   border-color: #39a6b2;
 }
 
-.steps div{
-  margin-bottom: 80px;
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
 }
 
-.steps img{
-  width: 15%;
-  margin: 10px 0;
+.step-img {
+  max-width: 100%;
 }
 
-.steps h3 {
+
+.step h3 {
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
+  flex: 1 30%;
 }
 
-.steps p {
+.step-text {
+  flex: 12;
+}
+
+.steps-text p {
   color: #39a6b2;
   font-size: 23px;
 }
 
-.steps span {
-  font-size: 38px;
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .trainers {
@@ -234,7 +278,6 @@ section {
 }
 
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -242,17 +285,16 @@ section {
   color: #fce138;
 }
 
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -272,26 +314,13 @@ section {
   color: #fce138;
 }
 
-footer {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  background: #fce138;
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
   width: 100%;
-  padding: 40px 35px;
-}
-
-footer h2 {
-  
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-s footer a {
-  color: #024e76;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
